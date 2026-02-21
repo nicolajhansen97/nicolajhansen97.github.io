@@ -12,7 +12,7 @@ import { Button } from "@/components/ui/button";
 const FORMSPREE_ENDPOINT = "https://formspree.io/f/YOUR_FORM_ID";
 
 const contactInfo = [
-  { icon: Mail, label: "Email", value: "hello@nicolajhansen.dev" },
+  { icon: Mail, label: "Email", value: "nicolajdeveloper@gmail.com" },
   { icon: MapPin, label: "Location", value: "Denmark" },
 ];
 

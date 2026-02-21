@@ -11,6 +11,7 @@ export const projects: Project[] = [
     category: "app",
     appStoreUrl: "https://apps.apple.com/dk/app/alliance-center-for-last-war/id6758313587",
     playStoreUrl: "https://play.google.com/store/apps/details?id=com.nicolajhansen97.aclw",
+    aiAssisted: true,
   },
   {
     id: "2",
@@ -18,9 +19,10 @@ export const projects: Project[] = [
     description:
       "Track your freezer inventory, reduce food waste, and share with family. Features expiration alerts, custom compartments, and real-time sync across devices.",
     image: "/images/projects/project-2.svg",
-    tags: ["iOS", "Android", "Family Sharing", "Inventory"],
+    tags: ["iOS", "Family Sharing", "Inventory"],
     category: "utility",
     appStoreUrl: "https://apps.apple.com/dk/app/freezely/id6759265489",
+    aiAssisted: true,
   },
   {
     id: "3",

@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import Image from "next/image";
-import { Smartphone, Gamepad2 } from "lucide-react";
+import { Smartphone, Gamepad2, Sparkles } from "lucide-react";
 import { motion, AnimatePresence } from "motion/react";
 import { FadeIn } from "@/components/motion/fade-in";
 import { SectionHeading } from "@/components/ui/section-heading";
@@ -94,6 +94,15 @@ export function Projects() {
                         {project.category === "game" ? "Game" : project.category === "utility" ? "Utility" : "App"}
                       </span>
                     </div>
+                    {/* AI badge */}
+                    {project.aiAssisted && (
+                      <div className="absolute top-3 left-3">
+                        <span className="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-violet-500/20 backdrop-blur-sm text-xs font-medium text-violet-300 border border-violet-400/30">
+                          <Sparkles size={11} />
+                          Made with AI
+                        </span>
+                      </div>
+                    )}
                   </div>
 
                   {/* Content */}

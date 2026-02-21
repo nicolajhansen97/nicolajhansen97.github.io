@@ -21,5 +21,5 @@ export const socialLinks: SocialLink[] = [
   { platform: "GitHub", url: "https://github.com", icon: "Github" },
   { platform: "LinkedIn", url: "https://linkedin.com", icon: "Linkedin" },
   { platform: "Twitter", url: "https://twitter.com", icon: "Twitter" },
-  { platform: "Email", url: "mailto:hello@nicolajhansen.dev", icon: "Mail" },
+  { platform: "Email", url: "mailto:nicolajdeveloper@gmail.com", icon: "Mail" },
 ];

@@ -9,6 +9,7 @@ export interface Project {
   playStoreUrl?: string;
   liveUrl?: string;
   sourceUrl?: string;
+  aiAssisted?: boolean;
 }
 
 export interface Testimonial {
