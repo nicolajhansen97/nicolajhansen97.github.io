@@ -5,13 +5,13 @@ const socialIcons = [
   { icon: Github, href: "https://github.com", label: "GitHub" },
   { icon: Linkedin, href: "https://linkedin.com", label: "LinkedIn" },
   { icon: Twitter, href: "https://twitter.com", label: "Twitter" },
-  { icon: Mail, href: "mailto:hello@nicolajhansen.dev", label: "Email" },
+  { icon: Mail, href: "mailto:nicolajdeveloper@gmail.com", label: "Email" },
 ];
 
 export function Footer() {
   return (
     <footer className="border-t border-white/5 bg-background">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-12">
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
           <div className="text-center md:text-left">
             <Link
@@ -25,7 +25,7 @@ export function Footer() {
             </p>
           </div>
 
-          <div className="flex items-center gap-4">
+          <div className="flex items-center gap-3 sm:gap-4">
             {socialIcons.map(({ icon: Icon, href, label }) => (
               <a
                 key={label}

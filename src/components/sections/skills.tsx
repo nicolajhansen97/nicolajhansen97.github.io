@@ -16,7 +16,7 @@ const iconMap: Record<string, React.ElementType> = {
 
 export function Skills() {
   return (
-    <section id="skills" className="py-24 relative">
+    <section id="skills" className="py-16 md:py-24 relative overflow-hidden">
       {/* Background accent */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-cyan-500/5 rounded-full blur-[120px]" />
 
@@ -28,7 +28,7 @@ export function Skills() {
           />
         </FadeIn>
 
-        <StaggerChildren className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <StaggerChildren className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
           {skillCategories.map((category) => {
             const Icon = iconMap[category.icon] || Monitor;
             return (

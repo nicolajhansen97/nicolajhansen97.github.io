@@ -14,7 +14,7 @@ const stats = [
 
 export function About() {
   return (
-    <section id="about" className="py-24 relative">
+    <section id="about" className="py-16 md:py-24 relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <FadeIn>
           <SectionHeading
@@ -23,7 +23,7 @@ export function About() {
           />
         </FadeIn>
 
-        <div className="grid md:grid-cols-2 gap-12 items-center">
+        <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
           {/* Image */}
           <FadeIn direction="left">
             <div className="relative">
@@ -68,10 +68,10 @@ export function About() {
               <div className="h-px bg-gradient-to-r from-cyan-400/50 to-transparent" />
 
               {/* Stats */}
-              <div className="grid grid-cols-2 sm:grid-cols-4 gap-6 pt-4">
+              <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 pt-4">
                 {stats.map((stat) => (
                   <div key={stat.label} className="text-center">
-                    <div className="text-3xl font-bold text-white">
+                    <div className="text-2xl sm:text-3xl font-bold text-white">
                       <AnimatedCounter target={stat.value} suffix={stat.suffix} />
                     </div>
                     <p className="text-sm text-zinc-500 mt-1">{stat.label}</p>

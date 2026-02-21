@@ -154,7 +154,7 @@ export function Hero() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.3, duration: 0.5 }}
-            className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold tracking-tight mb-2"
+            className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-bold tracking-tight mb-2"
           >
             {"Nicolaj".split("").map((char, i) => (
               <motion.span
@@ -171,7 +171,7 @@ export function Hero() {
                 {char}
               </motion.span>
             ))}
-            <span className="inline-block w-4" />
+            <span className="inline-block w-2 sm:w-4" />
             {"Hansen".split("").map((char, i) => (
               <motion.span
                 key={`last-${i}`}
@@ -190,7 +190,7 @@ export function Hero() {
           </motion.h1>
 
           {/* Animated role switcher */}
-          <div className="h-12 mb-8 flex items-center justify-center overflow-hidden">
+          <div className="h-10 sm:h-12 mb-6 sm:mb-8 flex items-center justify-center overflow-hidden">
             <AnimatePresence mode="wait">
               <motion.p
                 key={roleIndex}
@@ -198,7 +198,7 @@ export function Hero() {
                 animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
                 exit={{ opacity: 0, y: -30, filter: "blur(10px)" }}
                 transition={{ duration: 0.4 }}
-                className="text-xl md:text-2xl text-zinc-400 font-light"
+                className="text-lg sm:text-xl md:text-2xl text-zinc-400 font-light"
               >
                 {roles[roleIndex]}
               </motion.p>
@@ -210,7 +210,7 @@ export function Hero() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 1.2 }}
-            className="max-w-xl mx-auto text-lg text-zinc-500 mb-12 leading-relaxed"
+            className="max-w-xl mx-auto text-base sm:text-lg text-zinc-500 mb-8 sm:mb-12 leading-relaxed px-2 sm:px-0"
           >
             I build robust backends and ship apps to millions. From server
             architecture to mobile apps on the App Store &amp; Google Play.
@@ -221,7 +221,7 @@ export function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 1.4 }}
-            className="flex flex-col sm:flex-row items-center justify-center gap-4"
+            className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4"
           >
             <Button
               size="lg"
@@ -252,7 +252,7 @@ export function Hero() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 2 }}
-          className="absolute bottom-10 left-1/2 -translate-x-1/2"
+          className="absolute bottom-6 sm:bottom-10 left-1/2 -translate-x-1/2"
         >
           <motion.div
             animate={{ y: [0, 12, 0] }}

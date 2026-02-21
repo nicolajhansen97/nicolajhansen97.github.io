@@ -78,7 +78,7 @@ export function Contact() {
   }
 
   return (
-    <section id="contact" className="py-24 relative">
+    <section id="contact" className="py-16 md:py-24 relative">
       <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-cyan-400/20 to-transparent" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -89,12 +89,12 @@ export function Contact() {
           />
         </FadeIn>
 
-        <div className="grid lg:grid-cols-2 gap-12">
+        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12">
           {/* Contact info */}
           <FadeIn direction="left">
             <div className="space-y-8">
               <div>
-                <h3 className="text-2xl font-bold mb-4">
+                <h3 className="text-xl sm:text-2xl font-bold mb-4">
                   Let&apos;s build something{" "}
                   <span className="bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">
                     amazing
