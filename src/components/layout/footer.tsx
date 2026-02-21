@@ -1,10 +1,9 @@
 import Link from "next/link";
-import { Github, Linkedin, Twitter, Mail, ArrowUp } from "lucide-react";
+import { Github, Linkedin, Mail, ArrowUp } from "lucide-react";
 
 const socialIcons = [
-  { icon: Github, href: "https://github.com", label: "GitHub" },
-  { icon: Linkedin, href: "https://linkedin.com", label: "LinkedIn" },
-  { icon: Twitter, href: "https://twitter.com", label: "Twitter" },
+  { icon: Github, href: "https://github.com/nicolajhansen97", label: "GitHub" },
+  { icon: Linkedin, href: "https://www.linkedin.com/in/nicolaj-m%C3%B8ller-hansen-6460371b5/", label: "LinkedIn" },
   { icon: Mail, href: "mailto:nicolajdeveloper@gmail.com", label: "Email" },
 ];
 

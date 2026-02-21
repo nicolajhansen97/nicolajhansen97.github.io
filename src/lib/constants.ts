@@ -18,8 +18,7 @@ export const navItems: NavItem[] = [
 ];
 
 export const socialLinks: SocialLink[] = [
-  { platform: "GitHub", url: "https://github.com", icon: "Github" },
-  { platform: "LinkedIn", url: "https://linkedin.com", icon: "Linkedin" },
-  { platform: "Twitter", url: "https://twitter.com", icon: "Twitter" },
+  { platform: "GitHub", url: "https://github.com/nicolajhansen97", icon: "Github" },
+  { platform: "LinkedIn", url: "https://www.linkedin.com/in/nicolaj-m%C3%B8ller-hansen-6460371b5/", icon: "Linkedin" },
   { platform: "Email", url: "mailto:nicolajdeveloper@gmail.com", icon: "Mail" },
 ];
