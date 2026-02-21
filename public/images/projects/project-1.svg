@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0c1220"/>
+      <stop offset="100%" style="stop-color:#1a0a2e"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f97316"/>
+      <stop offset="100%" style="stop-color:#ef4444"/>
+    </linearGradient>
+    <linearGradient id="shield" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#fbbf24"/>
+      <stop offset="100%" style="stop-color:#f59e0b"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+    <filter id="softglow">
+      <feGaussianBlur stdDeviation="20"/>
+    </filter>
+  </defs>
+  <!-- Background -->
+  <rect width="800" height="600" fill="url(#bg)"/>
+  <!-- War-themed grid lines -->
+  <line x1="0" y1="150" x2="800" y2="150" stroke="#f9731610" stroke-width="1"/>
+  <line x1="0" y1="300" x2="800" y2="300" stroke="#f9731610" stroke-width="1"/>
+  <line x1="0" y1="450" x2="800" y2="450" stroke="#f9731610" stroke-width="1"/>
+  <line x1="200" y1="0" x2="200" y2="600" stroke="#f9731610" stroke-width="1"/>
+  <line x1="400" y1="0" x2="400" y2="600" stroke="#f9731610" stroke-width="1"/>
+  <line x1="600" y1="0" x2="600" y2="600" stroke="#f9731610" stroke-width="1"/>
+  <!-- Background glow -->
+  <circle cx="400" cy="260" r="150" fill="#f97316" opacity="0.06" filter="url(#softglow)"/>
+  <!-- Shield shape -->
+  <path d="M400 140 L480 180 L480 300 Q480 360 400 400 Q320 360 320 300 L320 180 Z" fill="none" stroke="url(#shield)" stroke-width="3" filter="url(#glow)"/>
+  <path d="M400 160 L460 192 L460 295 Q460 345 400 378 Q340 345 340 295 L340 192 Z" fill="#fbbf2408"/>
+  <!-- Crossed swords inside shield -->
+  <line x1="365" y1="210" x2="435" y2="340" stroke="#fbbf24" stroke-width="3" stroke-linecap="round"/>
+  <line x1="435" y1="210" x2="365" y2="340" stroke="#fbbf24" stroke-width="3" stroke-linecap="round"/>
+  <!-- Sword handles -->
+  <line x1="355" y1="200" x2="375" y2="220" stroke="#fbbf24" stroke-width="4" stroke-linecap="round"/>
+  <line x1="445" y1="200" x2="425" y2="220" stroke="#fbbf24" stroke-width="4" stroke-linecap="round"/>
+  <!-- Star in center -->
+  <polygon points="400,255 407,272 425,275 412,287 415,305 400,296 385,305 388,287 375,275 393,272" fill="#fbbf24" opacity="0.9"/>
+  <!-- Connection dots representing alliance -->
+  <circle cx="240" cy="200" r="6" fill="#f97316" opacity="0.7"/>
+  <circle cx="200" cy="320" r="6" fill="#f97316" opacity="0.5"/>
+  <circle cx="280" cy="380" r="6" fill="#f97316" opacity="0.6"/>
+  <circle cx="560" cy="200" r="6" fill="#f97316" opacity="0.7"/>
+  <circle cx="600" cy="320" r="6" fill="#f97316" opacity="0.5"/>
+  <circle cx="520" cy="380" r="6" fill="#f97316" opacity="0.6"/>
+  <!-- Connection lines -->
+  <line x1="240" y1="200" x2="320" y2="180" stroke="#f97316" stroke-width="1" opacity="0.3"/>
+  <line x1="200" y1="320" x2="320" y2="300" stroke="#f97316" stroke-width="1" opacity="0.3"/>
+  <line x1="280" y1="380" x2="340" y2="340" stroke="#f97316" stroke-width="1" opacity="0.3"/>
+  <line x1="560" y1="200" x2="480" y2="180" stroke="#f97316" stroke-width="1" opacity="0.3"/>
+  <line x1="600" y1="320" x2="480" y2="300" stroke="#f97316" stroke-width="1" opacity="0.3"/>
+  <line x1="520" y1="380" x2="460" y2="340" stroke="#f97316" stroke-width="1" opacity="0.3"/>
+  <!-- Title -->
+  <text x="400" y="480" font-family="system-ui, sans-serif" font-size="28" fill="#ffffff" text-anchor="middle" font-weight="700" letter-spacing="1">Alliance Center</text>
+  <text x="400" y="515" font-family="system-ui, sans-serif" font-size="16" fill="#f9731699" text-anchor="middle" font-weight="400" letter-spacing="3">FOR LAST WAR</text>
+</svg>

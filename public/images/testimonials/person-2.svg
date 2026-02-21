@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100">
+  <defs>
+    <linearGradient id="g2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#a855f7"/>
+      <stop offset="100%" style="stop-color:#ec4899"/>
+    </linearGradient>
+  </defs>
+  <circle cx="50" cy="50" r="48" fill="url(#g2)"/>
+  <circle cx="50" cy="50" r="45" fill="#0f172a"/>
+  <!-- Stylized face -->
+  <circle cx="50" cy="38" r="16" fill="#1e293b" stroke="#a855f7" stroke-width="1.2"/>
+  <ellipse cx="50" cy="72" rx="22" ry="16" fill="#1e293b" stroke="#a855f7" stroke-width="1.2"/>
+  <!-- Short hair -->
+  <path d="M34 34 Q38 22 50 22 Q62 22 66 34" fill="#1e293b" stroke="#a855f7" stroke-width="1.5" opacity="0.6"/>
+  <!-- Glasses -->
+  <rect x="37" y="33" width="10" height="8" rx="3" fill="none" stroke="#a855f7" stroke-width="1" opacity="0.5"/>
+  <rect x="53" y="33" width="10" height="8" rx="3" fill="none" stroke="#a855f7" stroke-width="1" opacity="0.5"/>
+  <line x1="47" y1="37" x2="53" y2="37" stroke="#a855f7" stroke-width="0.8" opacity="0.5"/>
+  <!-- Eyes -->
+  <circle cx="42" cy="37" r="1.5" fill="#a855f7"/>
+  <circle cx="58" cy="37" r="1.5" fill="#a855f7"/>
+  <!-- Smile -->
+  <path d="M44 43 Q50 47 56 43" fill="none" stroke="#a855f7" stroke-width="1" opacity="0.7"/>
+</svg>

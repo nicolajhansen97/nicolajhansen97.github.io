@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <defs>
+    <linearGradient id="bg3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a1a0a"/>
+      <stop offset="100%" style="stop-color:#1a2e0a"/>
+    </linearGradient>
+    <linearGradient id="run" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#4ade80"/>
+      <stop offset="100%" style="stop-color:#22d3ee"/>
+    </linearGradient>
+    <linearGradient id="math" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#a3e635"/>
+      <stop offset="100%" style="stop-color:#4ade80"/>
+    </linearGradient>
+    <filter id="glow3">
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+    <filter id="softglow3">
+      <feGaussianBlur stdDeviation="25"/>
+    </filter>
+  </defs>
+  <rect width="800" height="600" fill="url(#bg3)"/>
+  <circle cx="400" cy="280" r="160" fill="#4ade80" opacity="0.04" filter="url(#softglow3)"/>
+  <!-- Running track lines -->
+  <path d="M100 380 Q250 370 400 360 Q550 350 700 340" fill="none" stroke="#4ade80" stroke-width="2" opacity="0.15"/>
+  <path d="M100 400 Q250 390 400 380 Q550 370 700 360" fill="none" stroke="#4ade80" stroke-width="2" opacity="0.1"/>
+  <path d="M100 420 Q250 410 400 400 Q550 390 700 380" fill="none" stroke="#4ade80" stroke-width="2" opacity="0.07"/>
+  <!-- Running stick figures -->
+  <!-- Lead runner -->
+  <g transform="translate(420, 230)" filter="url(#glow3)">
+    <circle cx="0" cy="-30" r="10" fill="none" stroke="#4ade80" stroke-width="2.5"/>
+    <line x1="0" y1="-20" x2="0" y2="15" stroke="#4ade80" stroke-width="2.5"/>
+    <line x1="0" y1="15" x2="-15" y2="40" stroke="#4ade80" stroke-width="2.5"/>
+    <line x1="0" y1="15" x2="15" y2="40" stroke="#4ade80" stroke-width="2.5"/>
+    <line x1="0" y1="-5" x2="-18" y2="10" stroke="#4ade80" stroke-width="2.5"/>
+    <line x1="0" y1="-5" x2="18" y2="-15" stroke="#4ade80" stroke-width="2.5"/>
+  </g>
+  <!-- Trailing runners (smaller, faded) -->
+  <g transform="translate(340, 250)" opacity="0.5">
+    <circle cx="0" cy="-22" r="7" fill="none" stroke="#4ade80" stroke-width="1.8"/>
+    <line x1="0" y1="-15" x2="0" y2="8" stroke="#4ade80" stroke-width="1.8"/>
+    <line x1="0" y1="8" x2="-10" y2="26" stroke="#4ade80" stroke-width="1.8"/>
+    <line x1="0" y1="8" x2="10" y2="26" stroke="#4ade80" stroke-width="1.8"/>
+    <line x1="0" y1="-4" x2="-12" y2="6" stroke="#4ade80" stroke-width="1.8"/>
+    <line x1="0" y1="-4" x2="12" y2="-10" stroke="#4ade80" stroke-width="1.8"/>
+  </g>
+  <g transform="translate(280, 260)" opacity="0.3">
+    <circle cx="0" cy="-18" r="6" fill="none" stroke="#4ade80" stroke-width="1.5"/>
+    <line x1="0" y1="-12" x2="0" y2="6" stroke="#4ade80" stroke-width="1.5"/>
+    <line x1="0" y1="6" x2="-8" y2="20" stroke="#4ade80" stroke-width="1.5"/>
+    <line x1="0" y1="6" x2="8" y2="20" stroke="#4ade80" stroke-width="1.5"/>
+    <line x1="0" y1="-3" x2="-10" y2="5" stroke="#4ade80" stroke-width="1.5"/>
+    <line x1="0" y1="-3" x2="10" y2="-8" stroke="#4ade80" stroke-width="1.5"/>
+  </g>
+  <!-- Math gate -->
+  <rect x="500" y="180" width="80" height="100" rx="8" fill="#4ade8010" stroke="url(#math)" stroke-width="2" filter="url(#glow3)"/>
+  <text x="540" y="240" font-family="system-ui, sans-serif" font-size="28" fill="#a3e635" text-anchor="middle" font-weight="700">x3</text>
+  <!-- Score particles -->
+  <text x="480" y="170" font-family="system-ui, sans-serif" font-size="14" fill="#4ade80" opacity="0.6">+10</text>
+  <text x="530" y="155" font-family="system-ui, sans-serif" font-size="12" fill="#22d3ee" opacity="0.4">+5</text>
+  <!-- Speed lines -->
+  <line x1="200" y1="240" x2="250" y2="240" stroke="#4ade80" stroke-width="1" opacity="0.3"/>
+  <line x1="190" y1="255" x2="230" y2="255" stroke="#4ade80" stroke-width="1" opacity="0.2"/>
+  <line x1="210" y1="270" x2="245" y2="270" stroke="#4ade80" stroke-width="1" opacity="0.15"/>
+  <!-- Title -->
+  <text x="400" y="480" font-family="system-ui, sans-serif" font-size="32" fill="#ffffff" text-anchor="middle" font-weight="700" letter-spacing="1">Count Runners</text>
+  <text x="400" y="515" font-family="system-ui, sans-serif" font-size="14" fill="#4ade8099" text-anchor="middle" font-weight="400" letter-spacing="3">RUN • COUNT • CONQUER</text>
+</svg>
