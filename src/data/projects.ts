@@ -46,4 +46,26 @@ export const projects: Project[] = [
     appStoreUrl: "https://apps.apple.com/dk/app/hangman-classic/id6448302320",
     playStoreUrl: "https://play.google.com/store/apps/details?id=com.nicolaj.hangman",
   },
+  {
+    id: "5",
+    title: "LastWarAC.com",
+    description:
+      "Web companion for Last War Survival players. Alliance tools, event timers, and coordination features — all accessible from any browser without installing an app.",
+    image: "/images/projects/project-5.svg",
+    tags: ["Web App", "Game Tool", "Last War", "Alliance"],
+    category: "web",
+    liveUrl: "https://lastwarac.com",
+    aiAssisted: true,
+  },
+  {
+    id: "6",
+    title: "Portfolio Website",
+    description:
+      "This portfolio — built with Next.js, TypeScript, and Tailwind CSS. Features scroll animations, a starfield hero, themed project cards, and static deployment on GitHub Pages.",
+    image: "/images/projects/project-6.svg",
+    tags: ["Next.js", "TypeScript", "Tailwind CSS", "GitHub Pages"],
+    category: "web",
+    liveUrl: "https://nicolajhansen97.github.io",
+    aiAssisted: true,
+  },
 ];

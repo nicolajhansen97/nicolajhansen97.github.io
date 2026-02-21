@@ -4,7 +4,7 @@ export interface Project {
   description: string;
   image: string;
   tags: string[];
-  category: "app" | "game" | "utility";
+  category: "app" | "game" | "utility" | "web";
   appStoreUrl?: string;
   playStoreUrl?: string;
   liveUrl?: string;

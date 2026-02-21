@@ -2,20 +2,21 @@
 
 import { useState } from "react";
 import Image from "next/image";
-import { Smartphone, Gamepad2, Sparkles } from "lucide-react";
+import { Smartphone, Gamepad2, Sparkles, Globe, ExternalLink } from "lucide-react";
 import { motion, AnimatePresence } from "motion/react";
 import { FadeIn } from "@/components/motion/fade-in";
 import { SectionHeading } from "@/components/ui/section-heading";
 import { Badge } from "@/components/ui/badge";
 import { projects } from "@/data/projects";
 
-const categories = ["all", "app", "game", "utility"] as const;
+const categories = ["all", "app", "game", "utility", "web"] as const;
 
 const categoryLabels: Record<string, string> = {
   all: "All",
   app: "Apps",
   game: "Games",
   utility: "Utilities",
+  web: "Web",
 };
 
 export function Projects() {
@@ -31,8 +32,8 @@ export function Projects() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <FadeIn>
           <SectionHeading
-            title="My Apps"
-            subtitle="Published on the App Store & Google Play"
+            title="My Work"
+            subtitle="Apps, games and websites I've built"
           />
         </FadeIn>
 
@@ -86,12 +87,8 @@ export function Projects() {
                     {/* Category badge */}
                     <div className="absolute top-3 right-3">
                       <span className="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-black/60 backdrop-blur-sm text-xs font-medium text-white border border-white/10">
-                        {project.category === "game" ? (
-                          <Gamepad2 size={12} />
-                        ) : (
-                          <Smartphone size={12} />
-                        )}
-                        {project.category === "game" ? "Game" : project.category === "utility" ? "Utility" : "App"}
+                        {project.category === "game" ? <Gamepad2 size={12} /> : project.category === "web" ? <Globe size={12} /> : <Smartphone size={12} />}
+                        {project.category === "game" ? "Game" : project.category === "utility" ? "Utility" : project.category === "web" ? "Web" : "App"}
                       </span>
                     </div>
                     {/* AI badge */}
@@ -121,8 +118,19 @@ export function Projects() {
                       ))}
                     </div>
 
-                    {/* Store links */}
+                    {/* Links */}
                     <div className="flex flex-wrap gap-3 pt-2 border-t border-white/5">
+                      {project.liveUrl && (
+                        <a
+                          href={project.liveUrl}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="inline-flex items-center gap-2 text-xs font-medium text-zinc-400 hover:text-cyan-400 transition-colors"
+                        >
+                          <ExternalLink size={14} />
+                          Visit Website
+                        </a>
+                      )}
                       {project.appStoreUrl && (
                         <a
                           href={project.appStoreUrl}

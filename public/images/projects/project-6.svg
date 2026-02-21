@@ -1,18 +1,68 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
   <defs>
-    <linearGradient id="g6" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#0c0c1d"/>
-      <stop offset="100%" style="stop-color:#1a1a3e"/>
+    <linearGradient id="bg6" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#050d1a"/>
+      <stop offset="100%" style="stop-color:#0f172a"/>
     </linearGradient>
-    <linearGradient id="a6" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" style="stop-color:#f7971e"/>
-      <stop offset="100%" style="stop-color:#ffd200"/>
+    <linearGradient id="cyan6" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#22d3ee"/>
+      <stop offset="100%" style="stop-color:#3b82f6"/>
     </linearGradient>
+    <linearGradient id="code6" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#06b6d4"/>
+      <stop offset="100%" style="stop-color:#8b5cf6"/>
+    </linearGradient>
+    <filter id="glow6"><feGaussianBlur stdDeviation="5" result="blur"/><feComposite in="SourceGraphic" in2="blur" operator="over"/></filter>
+    <filter id="softbg6"><feGaussianBlur stdDeviation="30"/></filter>
   </defs>
-  <rect width="800" height="600" fill="url(#g6)" rx="12"/>
-  <circle cx="400" cy="240" r="70" fill="none" stroke="url(#a6)" stroke-width="3"/>
-  <circle cx="400" cy="240" r="8" fill="url(#a6)"/>
-  <line x1="400" y1="240" x2="400" y2="190" stroke="url(#a6)" stroke-width="3" stroke-linecap="round"/>
-  <line x1="400" y1="240" x2="440" y2="260" stroke="url(#a6)" stroke-width="2" stroke-linecap="round"/>
-  <text x="400" y="400" font-family="Arial" font-size="24" fill="#fff" text-anchor="middle" font-weight="bold">Weather App</text>
+  <rect width="800" height="600" fill="url(#bg6)"/>
+  <ellipse cx="400" cy="260" rx="200" ry="150" fill="#06b6d4" opacity="0.05" filter="url(#softbg6)"/>
+  <!-- Browser window frame -->
+  <rect x="150" y="95" width="500" height="330" rx="12" fill="#0a1428" stroke="#22d3ee" stroke-width="1.5"/>
+  <!-- Browser top bar -->
+  <rect x="150" y="95" width="500" height="38" rx="12" fill="#0f1e36"/>
+  <rect x="150" y="115" width="500" height="18" fill="#0f1e36"/>
+  <!-- Traffic light dots -->
+  <circle cx="178" cy="114" r="5" fill="#ef4444" opacity="0.6"/>
+  <circle cx="198" cy="114" r="5" fill="#f59e0b" opacity="0.6"/>
+  <circle cx="218" cy="114" r="5" fill="#22c55e" opacity="0.6"/>
+  <!-- URL bar -->
+  <rect x="238" y="104" width="298" height="20" rx="10" fill="#1e3a5f"/>
+  <text x="387" y="118" font-family="system-ui,sans-serif" font-size="10" fill="#67e8f9" text-anchor="middle">nicolajhansen97.github.io</text>
+  <!-- Page content mockup -->
+  <!-- NH. logo area -->
+  <text x="195" y="168" font-family="system-ui,sans-serif" font-size="18" fill="#22d3ee" font-weight="700" filter="url(#glow6)">NH.</text>
+  <!-- Nav dots -->
+  <rect x="530" y="156" width="30" height="4" rx="2" fill="#22d3ee" opacity="0.3"/>
+  <rect x="570" y="156" width="40" height="4" rx="2" fill="#22d3ee" opacity="0.3"/>
+  <rect x="618" y="156" width="22" height="4" rx="2" fill="#22d3ee" opacity="3"/>
+  <!-- Hero section in browser -->
+  <text x="387" y="210" font-family="system-ui,sans-serif" font-size="20" fill="#ffffff" text-anchor="middle" font-weight="700" filter="url(#glow6)">Nicolaj Hansen</text>
+  <rect x="305" y="220" width="164" height="6" rx="3" fill="#06b6d4" opacity="0.4"/>
+  <rect x="330" y="234" width="114" height="4" rx="2" fill="#ffffff" opacity="0.1"/>
+  <!-- CTA buttons -->
+  <rect x="320" y="248" width="70" height="20" rx="10" fill="#22d3ee" opacity="0.2" stroke="#22d3ee" stroke-width="0.8"/>
+  <rect x="400" y="248" width="80" height="20" rx="10" fill="none" stroke="#22d3ee" stroke-width="0.8" opacity="0.4"/>
+  <!-- Card row -->
+  <rect x="175" y="285" width="130" height="80" rx="6" fill="#0f2040" stroke="#22d3ee" stroke-width="0.8" opacity="0.6"/>
+  <rect x="320" y="285" width="130" height="80" rx="6" fill="#0f2040" stroke="#22d3ee" stroke-width="0.8" opacity="0.6"/>
+  <rect x="465" y="285" width="130" height="80" rx="6" fill="#0f2040" stroke="#22d3ee" stroke-width="0.8" opacity="0.6"/>
+  <!-- Card content lines -->
+  <rect x="185" y="298" width="50" height="5" rx="2" fill="#22d3ee" opacity="0.4"/>
+  <rect x="185" y="310" width="100" height="3" rx="1" fill="#ffffff" opacity="0.12"/>
+  <rect x="185" y="318" width="85" height="3" rx="1" fill="#ffffff" opacity="0.1"/>
+  <rect x="330" y="298" width="50" height="5" rx="2" fill="#3b82f6" opacity="0.5"/>
+  <rect x="330" y="310" width="100" height="3" rx="1" fill="#ffffff" opacity="0.12"/>
+  <rect x="330" y="318" width="85" height="3" rx="1" fill="#ffffff" opacity="0.1"/>
+  <rect x="475" y="298" width="50" height="5" rx="2" fill="#8b5cf6" opacity="0.5"/>
+  <rect x="475" y="310" width="100" height="3" rx="1" fill="#ffffff" opacity="0.12"/>
+  <rect x="475" y="318" width="85" height="3" rx="1" fill="#ffffff" opacity="0.1"/>
+  <!-- Decorative code symbols floating -->
+  <text x="100" y="180" font-family="monospace" font-size="18" fill="#22d3ee" opacity="0.15">&lt;/&gt;</text>
+  <text x="660" y="220" font-family="monospace" font-size="14" fill="#3b82f6" opacity="0.12">{ }</text>
+  <text x="95" y="360" font-family="monospace" font-size="12" fill="#8b5cf6" opacity="0.12">npm</text>
+  <text x="660" y="380" font-family="monospace" font-size="13" fill="#22d3ee" opacity="0.12">tsx</text>
+  <!-- Title -->
+  <text x="400" y="490" font-family="system-ui,sans-serif" font-size="30" fill="#ffffff" text-anchor="middle" font-weight="700" letter-spacing="1">Portfolio Website</text>
+  <text x="400" y="520" font-family="system-ui,sans-serif" font-size="13" fill="#22d3ee" text-anchor="middle" opacity="0.6" letter-spacing="3">NEXT.JS &#183; TAILWIND &#183; GITHUB PAGES</text>
 </svg>
